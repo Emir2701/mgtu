@@ -1,0 +1,4 @@
+temp_ext=".df" ".d" 
+work_ext="*.txt" 
+work_dir="/"
+usr_command="grep error* last.txt >last.log"
