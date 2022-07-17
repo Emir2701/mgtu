@@ -10,11 +10,11 @@ string_format = '{:}i'.format(len(l))
 len_str = calcsize(string_format) 
 string = pack(string_format, *l)
 
-file = open('def_13.bin', 'wb')
+file = open('def.bin', 'wb')
 file.write(string)
 file.close()
 
-file = open('def_13.bin', 'rb')
+file = open('def.bin', 'rb')
 temp = file.read(len_str)
 file.close()
 
@@ -23,7 +23,7 @@ print(temp)
 
 index = temp.index(max(temp))
 
-file = open('def_13.bin', 'rb+')
+file = open('def.bin', 'rb+')
 pointer = index * len_number
 	
 while pointer + len_number < len_str:
@@ -39,7 +39,7 @@ len_str -= len_number
 string_format = '{:}i'.format(len(l) - 1)
 
 
-file = open('def_13.bin', 'rb')
+file = open('def.bin', 'rb')
 temp = file.read(len_str)
 file.close()
 
